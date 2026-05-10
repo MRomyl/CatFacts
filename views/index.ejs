@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Cat Facts</title>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+    <body>
+        <main class="page-shell">
+            <section class="hero">
+                <p class="eyebrow">Daily feline trivia</p>
+                <h1>Random cat facts</h1>
+                <p class="intro">A tiny place for surprising facts about cats.</p>
+            </section>
+
+            <section class="fact-card" aria-labelledby="fact-heading">
+                <div class="fact-header">
+                    <h2 id="fact-heading">Cat fact</h2>
+                </div>
+
+                <p class="fact-text">
+                    <%= data %>
+                </p>
+
+                <button class="refresh-button" type="button" onclick="window.location.reload()">
+                    Refresh fact
+                </button>
+            </section>
+        </main>
+    </body>
+</html>
